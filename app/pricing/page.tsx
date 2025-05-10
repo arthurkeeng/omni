@@ -92,7 +92,7 @@ export default function PricingPage() {
                   <Check className="h-4 w-4 text-rose-600 mr-2" />
                   <span>Responsive design with animations</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center ">
                   <Check className="h-4 w-4 text-rose-600 mr-2" />
                   <span>Advanced analytics and reporting</span>
                 </li>

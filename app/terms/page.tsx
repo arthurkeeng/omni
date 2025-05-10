@@ -54,7 +54,7 @@ export default function TermsOfService() {
         <Section
           title="4. Intellectual Property"
           paragraphs={[
-            `The Service and its original content, features, and functionality are and will remain the exclusive property of our company and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of our company.`,
+            `The Service and its original content, features, and functionality are and will remain the exclusive property of our company and its licensors. The Service is protected by copyright, trademark, and other laws of Nigeria. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of our company.`,
           ]}
         />
 
@@ -106,7 +106,7 @@ export default function TermsOfService() {
         <Section
           title="10. Governing Law"
           paragraphs={[
-            `These Terms shall be governed and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.`,
+            `These Terms shall be governed and construed in accordance with the laws of Nigeria, without regard to its conflict of law provisions.`,
             `Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.`,
           ]}
         />
@@ -123,10 +123,10 @@ export default function TermsOfService() {
           title="12. Contact Us"
           paragraphs={[`If you have any questions about these Terms, please contact us:`]}
           listItems={[
-            `By email: legal@yourcompany.com`,
-            `By visiting this page on our website: www.yourcompany.com/contact`,
-            `By phone: (123) 456-7890`,
-            `By mail: 123 Legal Street, Your City, State 12345`,
+              "Email: omnidev.build@gmail.com",
+                "Website: www.omeenee.vercel.app",
+                "Phone: (234) 810-0944 296",
+                "Mail: No3 , Adeyemo Adedalu Lagos State, Po 100001 Nigeria",
           ]}
         />
       </div>
