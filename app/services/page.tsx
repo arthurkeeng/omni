@@ -70,7 +70,7 @@ export default function ServicesPage() {
               </div>
               <div className="mx-auto lg:ml-auto">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/eb.jpg"
                   alt="Web application example"
                   width={600}
                   height={400}
@@ -83,7 +83,7 @@ export default function ServicesPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2 lg:order-1 mx-auto lg:mr-auto">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/mob.jpg"
                   alt="Mobile application example"
                   width={600}
                   height={400}
@@ -178,7 +178,7 @@ export default function ServicesPage() {
               </div>
               <div className="mx-auto lg:ml-auto">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/desk.jpg"
                   alt="Desktop application example"
                   width={600}
                   height={400}

@@ -43,7 +43,7 @@ export default function AboutPage() {
             </div>
             <div className="mx-auto lg:ml-auto">
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="/4.jpg"
                 alt="Our team working together"
                 width={550}
                 height={550}
@@ -118,72 +118,44 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Our Team</h2>
-              <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
-                The talented individuals who make our company great.
-              </p>
+      <section className="w-full py-12 md:py-24 lg:py-32 mx-auto text-center bg-blue">
+  <div className="container px-4 md:px-6 mx-auto">
+    <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      <div className="space-y-2">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Our Team</h2>
+        <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
+          The talented individuals who make our company great.
+        </p>
+      </div>
+    </div>
+
+    <div className="mt-12 w-full flex justify-center mx-auto text-center bg-blue">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl w-full px-4">
+        {[ 
+          { name: 'Keeng Arthur', role: 'CEO & Founder' },
+          { name: 'Favor Charles', role: 'Frontend Developer' },
+          { name: 'Emily Ash', role: 'UX/UI Designer' },
+          { name: 'Chima Gregory', role: 'Backend Developer' },
+        ].map((member, i) => (
+          <div key={i} className="flex flex-col items-center space-y-2">
+            <div className="h-40 w-40 rounded-full overflow-hidden">
+              <Image
+                src="/placeholder.svg?height=160&width=160"
+                alt={member.name}
+                width={160}
+                height={160}
+                className="object-cover w-full h-full"
+              />
             </div>
+            <h3 className="font-bold text-lg">{member.name}</h3>
+            <p className="text-gray-500 dark:text-gray-400">{member.role}</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
-            <div className="flex flex-col items-center space-y-2">
-              <div className="h-40 w-40 rounded-full overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=160&width=160"
-                  alt="Team member"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg">Keeng Arthur</h3>
-              <p className="text-gray-500 dark:text-gray-400">CEO & Founder</p>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="h-40 w-40 rounded-full overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=160&width=160"
-                  alt="Team member"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg">Favor Charles</h3>
-              <p className="text-gray-500 dark:text-gray-400">Frontend Developer</p>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="h-40 w-40 rounded-full overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=160&width=160"
-                  alt="Team member"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg">David Rodriguez</h3>
-              <p className="text-gray-500 dark:text-gray-400">Lead Developer</p>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="h-40 w-40 rounded-full overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=160&width=160"
-                  alt="Team member"
-                  width={160}
-                  height={160}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg">Emily Chen</h3>
-              <p className="text-gray-500 dark:text-gray-400">UX/UI Designer</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   )
 }

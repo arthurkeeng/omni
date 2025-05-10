@@ -37,7 +37,7 @@ export default function Home() {
             </div>
             <div className="mx-auto lg:ml-auto">
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="/1.jpg"
                 alt="Tech solutions illustration"
                 width={550}
                 height={550}
@@ -175,57 +175,71 @@ export default function Home() {
                 Their attention to detail and technical expertise is unmatched."
               </p>
               <div className="flex items-center space-x-4">
-                <div className="rounded-full bg-gray-100 p-1">
-                  <div className="h-10 w-10 rounded-full bg-gray-200" />
+                <div className="h-10 w-10 rounded-full overflow-hidden bg-gray-200">
+                  <Image
+                    src="/2.jpg"
+                    alt="Profile"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div>
-                  <p className="font-medium">Sarah Johnson</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">CEO, TechSolutions Inc.</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col space-y-4 rounded-lg border p-6 shadow-sm">
-              <p className="text-gray-500 dark:text-gray-400 italic">
-                "The mobile app they developed for us has received outstanding feedback from our users. Their
-                collaborative approach made the entire process smooth and efficient."
-              </p>
-              <div className="flex items-center space-x-4">
-                <div className="rounded-full bg-gray-100 p-1">
-                  <div className="h-10 w-10 rounded-full bg-gray-200" />
-                </div>
-                <div>
-                  <p className="font-medium">Michael Chen</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">CTO, InnovateX</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+              
 
-      {/* CTA Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-rose-600 dark:bg-rose-800">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center text-white">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Ready to Transform Your Business?
-              </h2>
-              <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Let's discuss how our tech solutions can help you achieve your business goals.
-              </p>
+              <div>
+                <p className="font-medium">Sarah Johnson</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">CEO, TechSolutions Inc.</p>
+              </div>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-rose-600 hover:bg-gray-100">
-                  Contact Us Today
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+          </div>
+          <div className="flex flex-col space-y-4 rounded-lg border p-6 shadow-sm">
+            <p className="text-gray-500 dark:text-gray-400 italic">
+              "The mobile app they developed for us has received outstanding feedback from our users. Their
+              collaborative approach made the entire process smooth and efficient."
+            </p>
+            <div className="flex items-center space-x-4">
+                <div className="h-10 w-10 rounded-full overflow-hidden bg-gray-200">
+                  <Image
+                    src="/3.jpg"
+                    alt="Profile"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              <div>
+                <p className="font-medium">Michael Chen</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">CTO, InnovateX</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
     </div>
+      </section >
+
+    {/* CTA Section */ }
+    < section className = "w-full py-12 md:py-24 lg:py-32 bg-rose-600 dark:bg-rose-800" >
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center text-white">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Ready to Transform Your Business?
+            </h2>
+            <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Let's discuss how our tech solutions can help you achieve your business goals.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-rose-600 hover:bg-gray-100">
+                Contact Us Today
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      </section >
+    </div >
   )
 }
