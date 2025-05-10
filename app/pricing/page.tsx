@@ -31,7 +31,7 @@ export default function PricingPage() {
                 <p className="text-gray-500 dark:text-gray-400">Perfect for small businesses just getting started.</p>
               </div>
               <div className="mt-4 space-y-2">
-                <div className="text-4xl font-bold">$4,999</div>
+                <div className="text-4xl font-bold"> > $100</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Starting price for basic projects</p>
               </div>
               <ul className="mt-6 space-y-2">
@@ -76,7 +76,7 @@ export default function PricingPage() {
                 <p className="text-gray-500 dark:text-gray-400">Ideal for growing businesses with specific needs.</p>
               </div>
               <div className="mt-4 space-y-2">
-                <div className="text-4xl font-bold">$9,999</div>
+                <div className="text-4xl font-bold">>$1000</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Starting price for professional projects</p>
               </div>
               <ul className="mt-6 space-y-2">

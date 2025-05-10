@@ -29,7 +29,7 @@ export default function CareersPage() {
             </div>
             <div className="mx-auto lg:ml-auto">
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="/7.jpg"
                 alt="Team working together"
                 width={550}
                 height={550}

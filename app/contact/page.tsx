@@ -30,24 +30,30 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    toast({
-      title: "Message Sent",
-      description: "Thank you for contacting us. We'll get back to you shortly.",
+  
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     })
-
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      message: "",
-    })
+  
+    if (res.ok) {
+      toast({
+        title: "Message Sent",
+        description: "Thank you for contacting us. We'll get back to you shortly.",
+      })
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" })
+    } else {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      })
+    }
+  
     setIsSubmitting(false)
   }
+  
 
   return (
     <div className="flex flex-col min-h-screen">

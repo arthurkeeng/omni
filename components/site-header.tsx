@@ -58,14 +58,14 @@ export function SiteHeader() {
             >
               Pricing
             </Link>
-            <Link
+            {/* <Link
               href="/blog"
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 pathname === "/blog" ? "text-primary" : "text-muted-foreground"
               }`}
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               href="/careers"
               className={`text-sm font-medium transition-colors hover:text-primary ${
