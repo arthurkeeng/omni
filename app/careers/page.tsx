@@ -1,8 +1,40 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight, Briefcase, MapPin, Clock } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, Briefcase, MapPin, Clock } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+
+// const openings =[
+//   {
+//     role : "Senior Full Stack Developer",
+//     duration : "Full-time",
+//     location : "Remote / San Francisco, CA",
+//     createdAt : "2 days" ,
+//     href : "/careers/senior-full-stack-developer"
+//   },
+//   {
+//     role : "UX/UI Designer",
+//     duration : "Full-time",
+//     location : "Remote / New York, NY",
+//     createdAt : "1 week" ,
+//     href : "/careers/ux-ui-designer"
+//   },
+//   {
+//     role : "Mobile Developer (iOS/Android)",
+//     duration : "Full-time",
+//     location : "Remote / Austin, TX",
+//     createdAt : "1 week" ,
+//     href : "/careers/ux-ui-designer"
+//   },
+// ]
+
+const openings: Array<{
+  role: string;
+  duration: string;
+  location: string;
+  createdAt: string;
+  href: string;
+}> = [];
 
 export default function CareersPage() {
   return (
@@ -13,9 +45,12 @@ export default function CareersPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Join Our Team</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Join Our Team
+                </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Build your career with us and work on exciting projects that make a real difference.
+                  Build your career with us and work on exciting projects that
+                  make a real difference.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -45,9 +80,12 @@ export default function CareersPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Why Join TechCraft?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Why Join TechCraft?
+              </h2>
               <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
-                We offer a dynamic work environment where you can grow professionally and personally.
+                We offer a dynamic work environment where you can grow
+                professionally and personally.
               </p>
             </div>
           </div>
@@ -78,7 +116,8 @@ export default function CareersPage() {
               </div>
               <h3 className="text-xl font-bold">Innovative Projects</h3>
               <p className="text-center text-gray-500 dark:text-gray-400">
-                Work on cutting-edge technologies and challenging projects that push the boundaries of what's possible.
+                Work on cutting-edge technologies and challenging projects that
+                push the boundaries of what's possible.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
@@ -103,8 +142,8 @@ export default function CareersPage() {
               </div>
               <h3 className="text-xl font-bold">Collaborative Culture</h3>
               <p className="text-center text-gray-500 dark:text-gray-400">
-                Join a team of passionate professionals who support each other and work together to achieve common
-                goals.
+                Join a team of passionate professionals who support each other
+                and work together to achieve common goals.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
@@ -127,7 +166,8 @@ export default function CareersPage() {
               </div>
               <h3 className="text-xl font-bold">Growth Opportunities</h3>
               <p className="text-center text-gray-500 dark:text-gray-400">
-                Continuous learning, professional development, and clear career advancement paths for all team members.
+                Continuous learning, professional development, and clear career
+                advancement paths for all team members.
               </p>
             </div>
           </div>
@@ -139,7 +179,9 @@ export default function CareersPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Benefits</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Our Benefits
+              </h2>
               <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
                 We take care of our team with competitive benefits and perks.
               </p>
@@ -163,7 +205,8 @@ export default function CareersPage() {
               </svg>
               <h3 className="text-lg font-bold">Health Insurance</h3>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                Comprehensive health, dental, and vision coverage for you and your family.
+                Comprehensive health, dental, and vision coverage for you and
+                your family.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 rounded-lg border p-6">
@@ -188,7 +231,8 @@ export default function CareersPage() {
               </svg>
               <h3 className="text-lg font-bold">Flexible Work</h3>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                Remote work options and flexible hours to maintain a healthy work-life balance.
+                Remote work options and flexible hours to maintain a healthy
+                work-life balance.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 rounded-lg border p-6">
@@ -209,7 +253,8 @@ export default function CareersPage() {
               </svg>
               <h3 className="text-lg font-bold">Competitive Salary</h3>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                Above-market compensation packages with performance-based bonuses.
+                Above-market compensation packages with performance-based
+                bonuses.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 rounded-lg border p-6">
@@ -231,7 +276,8 @@ export default function CareersPage() {
               </svg>
               <h3 className="text-lg font-bold">Professional Development</h3>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                Learning budget, conference attendance, and ongoing training opportunities.
+                Learning budget, conference attendance, and ongoing training
+                opportunities.
               </p>
             </div>
           </div>
@@ -243,160 +289,60 @@ export default function CareersPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Open Positions</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Open Positions
+              </h2>
               <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
-                Join our team and help us build amazing tech solutions for businesses.
+                Join our team and help us build amazing tech solutions for
+                businesses.
               </p>
             </div>
           </div>
           <div className="grid gap-6 mt-12">
-            {/* Job Listing 1 */}
-            <div className="rounded-lg border p-6">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div className="space-y-1">
-                  <h3 className="text-2xl font-bold">Senior Full Stack Developer</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Briefcase className="mr-1 h-4 w-4" />
-                      Full-time
+            {openings.length > 0 ? (
+              openings.map((opening, index) => (
+                <div className="rounded-lg border p-6" key={index}>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div className="space-y-1">
+                      <h3 className="text-2xl font-bold">{opening.role}</h3>
+                      <div className="flex flex-wrap gap-2">
+                        <div className="flex items-center text-sm text-gray-500">
+                          <Briefcase className="mr-1 h-4 w-4" />
+                          {opening.duration}
+                        </div>
+                        <div className="flex items-center text-sm text-gray-500">
+                          <MapPin className="mr-1 h-4 w-4" />
+                          {opening.location}
+                        </div>
+                        <div className="flex items-center text-sm text-gray-500">
+                          <Clock className="mr-1 h-4 w-4" />
+                          Posted {opening.createdAt} ago
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <MapPin className="mr-1 h-4 w-4" />
-                      Remote / San Francisco, CA
-                    </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Clock className="mr-1 h-4 w-4" />
-                      Posted 2 days ago
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-4 md:mt-0">
-                  <Link href="/careers/senior-full-stack-developer">
-                    <Button className="bg-rose-600 hover:bg-rose-700">
-                      Apply Now
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="mt-4">
-                <p className="text-gray-500 dark:text-gray-400">
-                  We're looking for an experienced Full Stack Developer to join our team and help build innovative web
-                  and mobile applications for our clients.
-                </p>
-              </div>
-            </div>
-
-            {/* Job Listing 2 */}
-            <div className="rounded-lg border p-6">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div className="space-y-1">
-                  <h3 className="text-2xl font-bold">UX/UI Designer</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Briefcase className="mr-1 h-4 w-4" />
-                      Full-time
-                    </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <MapPin className="mr-1 h-4 w-4" />
-                      Remote / New York, NY
-                    </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Clock className="mr-1 h-4 w-4" />
-                      Posted 1 week ago
+                    <div className="mt-4 md:mt-0">
+                      <Link href={opening.href}>
+                        <Button className="bg-rose-600 hover:bg-rose-700">
+                          Apply Now
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </Link>
                     </div>
                   </div>
-                </div>
-                <div className="mt-4 md:mt-0">
-                  <Link href="/careers/ux-ui-designer">
-                    <Button className="bg-rose-600 hover:bg-rose-700">
-                      Apply Now
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="mt-4">
-                <p className="text-gray-500 dark:text-gray-400">
-                  We're seeking a talented UX/UI Designer to create beautiful, intuitive interfaces for our web and
-                  mobile applications.
-                </p>
-              </div>
-            </div>
-
-            {/* Job Listing 3 */}
-            <div className="rounded-lg border p-6">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div className="space-y-1">
-                  <h3 className="text-2xl font-bold">Mobile Developer (iOS/Android)</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Briefcase className="mr-1 h-4 w-4" />
-                      Full-time
-                    </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <MapPin className="mr-1 h-4 w-4" />
-                      Remote / Austin, TX
-                    </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Clock className="mr-1 h-4 w-4" />
-                      Posted 3 days ago
-                    </div>
+                  <div className="mt-4">
+                    <p className="text-gray-500 dark:text-gray-400">
+                      We're looking for an experienced Full Stack Developer to
+                      join our team and help build innovative web and mobile
+                      applications for our clients.
+                    </p>
                   </div>
                 </div>
-                <div className="mt-4 md:mt-0">
-                  <Link href="/careers/mobile-developer">
-                    <Button className="bg-rose-600 hover:bg-rose-700">
-                      Apply Now
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </div>
+              ))
+            ) : (
+              <div className="rounded-lg border border-dashed p-6 text-center text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800">
+                No openings yet. Please check back soon!
               </div>
-              <div className="mt-4">
-                <p className="text-gray-500 dark:text-gray-400">
-                  We're looking for a skilled Mobile Developer with experience in both iOS and Android development to
-                  join our growing team.
-                </p>
-              </div>
-            </div>
-
-            {/* Job Listing 4 */}
-            <div className="rounded-lg border p-6">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div className="space-y-1">
-                  <h3 className="text-2xl font-bold">Project Manager</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Briefcase className="mr-1 h-4 w-4" />
-                      Full-time
-                    </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <MapPin className="mr-1 h-4 w-4" />
-                      Remote / Chicago, IL
-                    </div>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Clock className="mr-1 h-4 w-4" />
-                      Posted 5 days ago
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-4 md:mt-0">
-                  <Link href="/careers/project-manager">
-                    <Button className="bg-rose-600 hover:bg-rose-700">
-                      Apply Now
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="mt-4">
-                <p className="text-gray-500 dark:text-gray-400">
-                  We're seeking an experienced Project Manager to lead our development teams and ensure successful
-                  project delivery.
-                </p>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
@@ -406,15 +352,20 @@ export default function CareersPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center text-white">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Don't See the Right Fit?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Don't See the Right Fit?
+              </h2>
               <p className="max-w-[700px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                We're always looking for talented individuals to join our team. Send us your resume and we'll keep it on
-                file.
+                We're always looking for talented individuals to join our team.
+                Send us your resume and we'll keep it on file.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-rose-600 hover:bg-gray-100">
+                <Button
+                  size="lg"
+                  className="bg-white text-rose-600 hover:bg-gray-100"
+                >
                   Submit Your Resume
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -424,5 +375,5 @@ export default function CareersPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
