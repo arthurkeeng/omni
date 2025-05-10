@@ -29,28 +29,28 @@ export default function PortfolioPage() {
             <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
               <div className="relative aspect-video">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/p1.png"
                   alt="Project thumbnail"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold">HealthTrack Mobile App</h3>
+                <h3 className="text-xl font-bold">Healthcare Booking App</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  A comprehensive health tracking mobile application for iOS and Android that helps users monitor their
-                  fitness goals.
+                  A comprehensive healthcare booking application for that helps users make appointment with varied physicians.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">React Native</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Firebase</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Mobile App</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Next</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Appwrite</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Web App</span>
                 </div>
                 <Link
-                  href="/portfolio/health-track"
+                  href="https://omeeneehealthcare.vercel.app"
+                  target="_blank"
                   className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
                 >
-                  View Case Study
+                  View 
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </Link>
               </div>
@@ -60,27 +60,28 @@ export default function PortfolioPage() {
             <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
               <div className="relative aspect-video">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/p2.png"
                   alt="Project thumbnail"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold">EcoCommerce Platform</h3>
+                <h3 className="text-xl font-bold">E-Vehicle Platform</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  An e-commerce platform for sustainable products with advanced filtering and recommendation features.
+                  An e-commerce marketplace for all things cars.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Next.js</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Stripe</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Gemini </span>
                   <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Web App</span>
                 </div>
                 <Link
-                  href="/portfolio/eco-commerce"
+                  href="https://omeeneecars.vercel.app"
+                  target="_blank"
                   className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
                 >
-                  View Case Study
+                  View
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </Link>
               </div>
@@ -90,28 +91,28 @@ export default function PortfolioPage() {
             <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
               <div className="relative aspect-video">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/p3.png"
                   alt="Project thumbnail"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold">FinTrack Desktop App</h3>
+                <h3 className="text-xl font-bold">Salon Booking App</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  A comprehensive financial management desktop application for small businesses with reporting and
-                  forecasting.
+                  A Web tool for easing salon appointments and booking
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Electron</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">React</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Desktop App</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Next.js</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Clerk</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Web App</span>
                 </div>
                 <Link
-                  href="/portfolio/fin-track"
+                  href="https://glamore.vercel.app"
+                  target="_blank"
                   className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
                 >
-                  View Case Study
+                  View
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </Link>
               </div>
@@ -121,28 +122,27 @@ export default function PortfolioPage() {
             <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
               <div className="relative aspect-video">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/p4.png"
                   alt="Project thumbnail"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold">SmartHome Control System</h3>
+                <h3 className="text-xl font-bold">Learning Management System</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  An IoT-based smart home control system with mobile and web interfaces for remote monitoring and
-                  control.
+                  An School Management system for day to day run of educational establishments
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">IoT</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">React</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Next.js</span>
                   <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Node.js</span>
                 </div>
                 <Link
-                  href="/portfolio/smart-home"
+                  href="https://omeeneeschoolsystem.vercel.app/admin"
+                  target="_blank"
                   className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
                 >
-                  View Case Study
+                  View
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </Link>
               </div>
@@ -152,63 +152,33 @@ export default function PortfolioPage() {
             <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
               <div className="relative aspect-video">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/p5.png"
                   alt="Project thumbnail"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold">EdTech Learning Platform</h3>
+                <h3 className="text-xl font-bold">Business Conferencing Tool</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  A comprehensive online learning platform with course management, video streaming, and progress
-                  tracking.
+                  A Platform for hosting meetings and calls
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Vue.js</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Django</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Next.js</span>
                   <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Web App</span>
                 </div>
                 <Link
-                  href="/portfolio/edtech-platform"
+                  href="https://omeeneeconferencing.vercel.app/"
+                   target="_blank"
                   className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
                 >
-                  View Case Study
+                  View
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </Link>
               </div>
             </div>
 
-            {/* Project 6 */}
-            <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
-              <div className="relative aspect-video">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Project thumbnail"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold">Logistics Management System</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  An end-to-end logistics management system with real-time tracking, inventory management, and
-                  reporting.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Angular</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">.NET</span>
-                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Enterprise</span>
-                </div>
-                <Link
-                  href="/portfolio/logistics-system"
-                  className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
-                >
-                  View Case Study
-                  <ArrowRight className="ml-1 h-3 w-3" />
-                </Link>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>

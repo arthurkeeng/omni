@@ -1,59 +1,61 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { MapPin, Phone, Mail, Send } from "lucide-react"
+import { useState } from "react";
+import { MapPin, Phone, Mail, Send } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { useToast } from "@/hooks/use-toast"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 
 export default function ContactPage() {
-  const { toast } = useToast()
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
     message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-  
+    e.preventDefault();
+    setIsSubmitting(true);
+
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
-    })
-  
+    });
+
     if (res.ok) {
       toast({
         title: "Message Sent",
-        description: "Thank you for contacting us. We'll get back to you shortly.",
-      })
-      setFormData({ name: "", email: "", phone: "", company: "", message: "" })
+        description:
+          "Thank you for contacting us. We'll get back to you shortly.",
+      });
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
     } else {
       toast({
         title: "Error",
         description: "Something went wrong. Please try again later.",
         variant: "destructive",
-      })
+      });
     }
-  
-    setIsSubmitting(false)
-  }
-  
+
+    setIsSubmitting(false);
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -62,9 +64,12 @@ export default function ContactPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Contact Us
+              </h1>
               <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Have a question or want to discuss a project? We'd love to hear from you.
+                Have a question or want to discuss a project? We'd love to hear
+                from you.
               </p>
             </div>
           </div>
@@ -78,9 +83,12 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="space-y-6">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter">Get in Touch</h2>
+                <h2 className="text-3xl font-bold tracking-tighter">
+                  Get in Touch
+                </h2>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we'll get back to you as soon as
+                  possible.
                 </p>
               </div>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -143,7 +151,11 @@ export default function ContactPage() {
                     className="min-h-[150px]"
                   />
                 </div>
-                <Button type="submit" className="w-full bg-rose-600 hover:bg-rose-700" disabled={isSubmitting}>
+                <Button
+                  type="submit"
+                  className="w-full bg-rose-600 hover:bg-rose-700"
+                  disabled={isSubmitting}
+                >
                   {isSubmitting ? (
                     <span className="flex items-center">
                       <svg
@@ -181,8 +193,12 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-6">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter">Contact Information</h2>
-                <p className="text-gray-500 dark:text-gray-400">You can also reach us using the information below.</p>
+                <h2 className="text-3xl font-bold tracking-tighter">
+                  Contact Information
+                </h2>
+                <p className="text-gray-500 dark:text-gray-400">
+                  You can also reach us using the information below.
+                </p>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
@@ -202,26 +218,30 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-rose-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-bold">Phone</h3>
-                    <p className="text-gray-500 dark:text-gray-400">+234 8100944296</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      +234 8100944296
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Mail className="h-6 w-6 text-rose-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-bold">Email</h3>
-                    <p className="text-gray-500 dark:text-gray-400">omnidev.build@gmail.com</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      omnidev.build@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="rounded-lg overflow-hidden h-[300px] mt-8">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0968173775!2d-122.4004334!3d37.7909755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ3JzI3LjUiTiAxMjLCsDI0JzAxLjYiVw!5e0!3m2!1sen!2sus!4v1620841757925!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126836.86374844635!2d3.3158371499999996!3d6.5243793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4dcecb4cf35%3A0x2b31c2a3eb648dad!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1620841757925!5m2!1sen!2sng"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
-                  title="Office Location"
+                  title="Office Location in Nigeria"
                 ></iframe>
               </div>
             </div>
@@ -234,7 +254,9 @@ export default function ContactPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Frequently Asked Questions
+              </h2>
               <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
                 Find answers to common questions about working with us.
               </p>
@@ -242,38 +264,51 @@ export default function ContactPage() {
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12 mt-12">
             <div className="space-y-2">
-              <h3 className="text-xl font-bold">What is your typical project process?</h3>
+              <h3 className="text-xl font-bold">
+                What is your typical project process?
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Our process typically includes discovery, planning, design, development, testing, and deployment phases.
-                We maintain clear communication throughout to ensure your project meets your expectations.
+                Our process typically includes discovery, planning, design,
+                development, testing, and deployment phases. We maintain clear
+                communication throughout to ensure your project meets your
+                expectations.
               </p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-xl font-bold">How long does a typical project take?</h3>
+              <h3 className="text-xl font-bold">
+                How long does a typical project take?
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Project timelines vary based on complexity. Simple applications may take 4-8 weeks, while more complex
-                solutions can take 3-6 months or more. We'll provide a detailed timeline during our initial
-                consultation.
+                Project timelines vary based on complexity. Simple applications
+                may take 4-8 weeks, while more complex solutions can take 3-6
+                months or more. We'll provide a detailed timeline during our
+                initial consultation.
               </p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-xl font-bold">Do you provide ongoing support after launch?</h3>
+              <h3 className="text-xl font-bold">
+                Do you provide ongoing support after launch?
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Yes, we offer various maintenance packages to ensure your application remains secure, up-to-date, and
-                functioning optimally after launch.
+                Yes, we offer various maintenance packages to ensure your
+                application remains secure, up-to-date, and functioning
+                optimally after launch.
               </p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-xl font-bold">What information do you need to provide a quote?</h3>
+              <h3 className="text-xl font-bold">
+                What information do you need to provide a quote?
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                To provide an accurate quote, we typically need to understand your project goals, required features,
-                timeline expectations, and any specific technical requirements. The more details you can provide, the
-                more accurate our estimate will be.
+                To provide an accurate quote, we typically need to understand
+                your project goals, required features, timeline expectations,
+                and any specific technical requirements. The more details you
+                can provide, the more accurate our estimate will be.
               </p>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

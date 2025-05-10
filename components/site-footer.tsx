@@ -26,32 +26,29 @@ export function SiteFooter() {
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
+              
             </div>
           </div>
           <div className="space-y-4">
             <h3 className="font-medium text-sm">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/web-applications" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services" className="text-muted-foreground hover:text-foreground">
                   Web Applications
                 </Link>
               </li>
               <li>
-                <Link href="/services/mobile-applications" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services" className="text-muted-foreground hover:text-foreground">
                   Mobile Applications
                 </Link>
               </li>
               <li>
-                <Link href="/services/desktop-applications" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services" className="text-muted-foreground hover:text-foreground">
                   Desktop Applications
                 </Link>
               </li>
               <li>
-                <Link href="/services/consulting" className="text-muted-foreground hover:text-foreground">
+                <Link href="/services" className="text-muted-foreground hover:text-foreground">
                   Tech Consulting
                 </Link>
               </li>
@@ -70,11 +67,7 @@ export function SiteFooter() {
                   Portfolio
                 </Link>
               </li>
-              <li>
-                <Link href="/blog" className="text-muted-foreground hover:text-foreground">
-                  Blog
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/careers" className="text-muted-foreground hover:text-foreground">
                   Careers
@@ -95,11 +88,7 @@ export function SiteFooter() {
                   Terms of Service
                 </Link>
               </li>
-              <li>
-                <Link href="/cookies" className="text-muted-foreground hover:text-foreground">
-                  Cookie Policy
-                </Link>
-              </li>
+              
             </ul>
           </div>
         </div>

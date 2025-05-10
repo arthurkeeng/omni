@@ -69,9 +69,9 @@ export default function Home() {
               <p className="text-center text-gray-500 dark:text-gray-400">
                 Custom web applications that are responsive, scalable, and tailored to your business needs.
               </p>
-              <Link href="/services/web-applications" className="text-rose-600 hover:underline font-medium">
+              {/* <Link href="/services/web-applications" className="text-rose-600 hover:underline font-medium">
                 Learn More
-              </Link>
+              </Link> */}
             </div>
             <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
               <div className="p-3 rounded-full bg-rose-100 dark:bg-gray-800">
@@ -81,9 +81,9 @@ export default function Home() {
               <p className="text-center text-gray-500 dark:text-gray-400">
                 Native and cross-platform mobile apps for iOS and Android that engage your customers.
               </p>
-              <Link href="/services/mobile-applications" className="text-rose-600 hover:underline font-medium">
+              {/* <Link href="/services/mobile-applications" className="text-rose-600 hover:underline font-medium">
                 Learn More
-              </Link>
+              </Link> */}
             </div>
             <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
               <div className="p-3 rounded-full bg-amber-100 dark:bg-gray-800">
@@ -93,9 +93,9 @@ export default function Home() {
               <p className="text-center text-gray-500 dark:text-gray-400">
                 Powerful desktop software that streamlines your business operations and increases productivity.
               </p>
-              <Link href="/services/desktop-applications" className="text-rose-600 hover:underline font-medium">
+              {/* <Link href="/services/desktop-applications" className="text-rose-600 hover:underline font-medium">
                 Learn More
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
