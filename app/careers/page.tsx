@@ -81,7 +81,7 @@ export default function CareersPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Why Join TechCraft?
+                Why Join Omeenee?
               </h2>
               <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
                 We offer a dynamic work environment where you can grow
