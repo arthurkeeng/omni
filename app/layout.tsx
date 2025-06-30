@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Omeenee - Building Tech Solutions for Businesses",
   description:
     "We build custom web, mobile, and desktop applications that transform your business operations and drive growth.",
+   icons: {
+    icon: "/favicon.png"
+  },
 }
 
 export default function RootLayout({
