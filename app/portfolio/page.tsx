@@ -178,6 +178,38 @@ export default function PortfolioPage() {
               </div>
             </div>
 
+            {/* Project 6 */}
+            <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
+              <div className="relative aspect-video">
+                <Image
+                  src="/p8.jpg"
+                  alt="Project thumbnail"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 space-y-2">
+                <h3 className="text-xl font-bold">Business Conferencing Tool</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  A Conversational App for getting all the things you need
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Next.js</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Web App</span>
+                </div>
+                <Link
+                  href="https://errand-boy-ten.vercel.app/"
+                   target="_blank"
+                  className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
+                >
+                  View
+                  <ArrowRight className="ml-1 h-3 w-3" />
+                </Link>
+              </div>
+            </div>
+
+            
+
             
           </div>
         </div>
