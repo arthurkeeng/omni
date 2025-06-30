@@ -189,7 +189,7 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold">Business Conferencing Tool</h3>
+                <h3 className="text-xl font-bold">AI Shopping Assistant</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   A Conversational App for getting all the things you need
                 </p>
