@@ -42,7 +42,7 @@ export default function PricingPage() {
               </div>
               <div className="mt-4 space-y-2">
                 <div className="text-4xl font-bold">₦280,000</div>
-                <div className="text-2xl font-semibold text-gray-600">$380</div>
+                <div className="text-2xl font-semibold text-gray-600">$200</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Complete website package</p>
               </div>
               <ul className="mt-6 space-y-2 flex-1">
@@ -96,7 +96,7 @@ export default function PricingPage() {
               </div>
               <div className="mt-4 space-y-2">
                 <div className="text-4xl font-bold">₦550,000</div>
-                <div className="text-2xl font-semibold text-gray-600">$750</div>
+                <div className="text-2xl font-semibold text-gray-600">$400</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Advanced business website</p>
               </div>
               <ul className="mt-6 space-y-2 flex-1">
@@ -153,7 +153,7 @@ export default function PricingPage() {
               </div>
               <div className="mt-4 space-y-2">
                 <div className="text-4xl font-bold">₦1,000,000+</div>
-                <div className="text-2xl font-semibold text-gray-600">$1,350+</div>
+                <div className="text-2xl font-semibold text-gray-600">$1,000+</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Fully custom enterprise solution</p>
               </div>
               <ul className="mt-6 space-y-2 flex-1">
@@ -220,7 +220,7 @@ export default function PricingPage() {
               </div>
               <div className="mt-4 space-y-2">
                 <div className="text-4xl font-bold">₦600,000</div>
-                <div className="text-2xl font-semibold text-gray-600">$800</div>
+                <div className="text-2xl font-semibold text-gray-600">$450</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Android or iOS app</p>
               </div>
               <ul className="mt-6 space-y-2 flex-1">
@@ -270,7 +270,7 @@ export default function PricingPage() {
               </div>
               <div className="mt-4 space-y-2">
                 <div className="text-4xl font-bold">₦1,200,000</div>
-                <div className="text-2xl font-semibold text-gray-600">$1,650</div>
+                <div className="text-2xl font-semibold text-gray-600">$1,000</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">iOS + Android app</p>
               </div>
               <ul className="mt-6 space-y-2 flex-1">
@@ -321,7 +321,7 @@ export default function PricingPage() {
               </div>
               <div className="mt-4 space-y-2">
                 <div className="text-4xl font-bold">₦2,000,000+</div>
-                <div className="text-2xl font-semibold text-gray-600">$2,800+</div>
+                <div className="text-2xl font-semibold text-gray-600">$2,000+</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Premium mobile solution</p>
               </div>
               <ul className="mt-6 space-y-2 flex-1">
