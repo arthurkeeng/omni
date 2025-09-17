@@ -25,6 +25,36 @@ export default function PortfolioPage() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+{/*             project 7 */}
+            <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
+              <div className="relative aspect-video">
+                <Image
+                  src="/p1.png"
+                  alt="Project thumbnail"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 space-y-2">
+                <h3 className="text-xl font-bold">Propertyflow</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  ERP solution to manage properties and real estate assets.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Next</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Rust</span>
+                  <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-full">Postgresql</span>
+                </div>
+                <Link
+                  href="https://propertyflow-henna.vercel.app/"
+                  target="_blank"
+                  className="text-rose-600 hover:underline text-sm font-medium inline-flex items-center"
+                >
+                  View 
+                  <ArrowRight className="ml-1 h-3 w-3" />
+                </Link>
+              </div>
+            </div>
             {/* Project 1 */}
             <div className="flex flex-col space-y-3 rounded-lg border overflow-hidden">
               <div className="relative aspect-video">
